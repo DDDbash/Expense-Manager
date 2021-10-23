@@ -1,0 +1,13 @@
+.header {
+  background: #3e466f;
+}
+
+.header__title {
+  color: white;
+  text-decoration: none;
+}
+
+.header__title:hover {
+  color: white;
+  text-decoration: none;
+}

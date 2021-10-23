@@ -1,0 +1,32 @@
+.form-header {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-body {
+  margin-left: 2rem;
+}
+
+.form-error {
+  color: red;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.col-form-label {
+  padding-left: 15px;
+  font-size: 20px;
+  width: 95px;
+}
+
+.form-control {
+  height: calc(2rem + 0.75rem + 2px);
+}
+
+.form-button {
+  margin-left: 30px;
+  margin-bottom: 2rem;
+}
