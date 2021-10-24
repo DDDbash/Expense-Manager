@@ -1,8 +1,14 @@
 @media only screen and (max-width: 838px) {
+  .sn {
+    display: none;
+  }
   .visibilityDate {
     display: none;
   }
   .visibilityNote {
+    display: none;
+  }
+  img {
     display: none;
   }
 }
@@ -12,12 +18,16 @@
   width: 97px;
 }
 
+.amt {
+  width: 110px;
+}
+
 .sn {
   width: 30px;
 }
 
 .actions {
-  width: 120px;
+  width: 115px;
 }
 
 .visibilityNote {
