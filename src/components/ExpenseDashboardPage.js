@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ExpenseList from './ExpenseList';
 import ExpenseListFilters from './ExpenseListFilters';
 import ExpenseTotal from './ExpenseTotal';
+import NextMonthPrediction from './NextMonthPrediction';
 
 const ExpenseDashboardPage = () => {
     const [sortedDateAscending, setSortedDateAscending] = useState(true);
@@ -26,6 +27,7 @@ const ExpenseDashboardPage = () => {
                 setSortedAmountDescending={sortAmountD}
                 setSortedAmountReset={sortAmountR} />
             <ExpenseTotal />
+            <NextMonthPrediction />
         </div>
     )
 };
