@@ -20,44 +20,42 @@ const ExpenseListFilters = (props) => {
 
     return (
         <div className="mt-3">
-            <div className="row top-section">
-                <div className="filters">
-                    <Dropdown className="dropdown-sort">
-                        <Dropdown.Toggle variant="primary" id="dropdown-basic">
-                            {props.filters.categorizedBy.charAt(0).toUpperCase() + props.filters.categorizedBy.slice(1)}
-                        </Dropdown.Toggle>
+            <div className="row">
+                <Dropdown className="dropdown-sort">
+                    <Dropdown.Toggle variant="primary" id="dropdown-basic">
+                        {props.filters.categorizedBy.charAt(0).toUpperCase() + props.filters.categorizedBy.slice(1)}
+                    </Dropdown.Toggle>
 
-                        <Dropdown.Menu>
-                            <Dropdown.Item onClick={() => props.dispatch(categoryAll())}>All Category</Dropdown.Item>
-                            <Dropdown.Item onClick={() => props.dispatch(categoryFood())}>Food</Dropdown.Item>
-                            <Dropdown.Item onClick={() => props.dispatch(categoryHealth())}>Health</Dropdown.Item>
-                            <Dropdown.Item onClick={() => props.dispatch(categoryEntertainment())}>Entertainment</Dropdown.Item>
-                            <Dropdown.Item onClick={() => props.dispatch(categoryTransport())}>Transport</Dropdown.Item>
-                            <Dropdown.Item onClick={() => props.dispatch(categoryOthers())}>Others</Dropdown.Item>
-                        </Dropdown.Menu>
-                    </Dropdown>
-                    <input
-                        placeholder="Search Expense"
-                        className="form-control search-bar"
-                        type="text"
-                        value={props.filters.text}
-                        onChange={(e) => {
-                            props.dispatch(setTextFilter(e.target.value));
-                        }} />
-                    <DateRangePicker
-                        startDateId="1"
-                        startDate={props.filters.startDate}
-                        endDate={props.filters.endDate}
-                        endDateId="2"
-                        onDatesChange={changedDates}
-                        focusedInput={focused}
-                        onFocusChange={changedFocus}
-                        showClearDates={true}
-                        numberOfMonths={1}
-                        isOutsideRange={() => false}
-                        displayFormat="Do MMMM, YYYY"
-                    />
-                </div>
+                    <Dropdown.Menu>
+                        <Dropdown.Item onClick={() => props.dispatch(categoryAll())}>All Category</Dropdown.Item>
+                        <Dropdown.Item onClick={() => props.dispatch(categoryFood())}>Food</Dropdown.Item>
+                        <Dropdown.Item onClick={() => props.dispatch(categoryHealth())}>Health</Dropdown.Item>
+                        <Dropdown.Item onClick={() => props.dispatch(categoryEntertainment())}>Entertainment</Dropdown.Item>
+                        <Dropdown.Item onClick={() => props.dispatch(categoryTransport())}>Transport</Dropdown.Item>
+                        <Dropdown.Item onClick={() => props.dispatch(categoryOthers())}>Others</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
+                <input
+                    placeholder="Search Expense"
+                    className="form-control search-bar"
+                    type="text"
+                    value={props.filters.text}
+                    onChange={(e) => {
+                        props.dispatch(setTextFilter(e.target.value));
+                    }} />
+                <DateRangePicker
+                    startDateId="1"
+                    startDate={props.filters.startDate}
+                    endDate={props.filters.endDate}
+                    endDateId="2"
+                    onDatesChange={changedDates}
+                    focusedInput={focused}
+                    onFocusChange={changedFocus}
+                    showClearDates={true}
+                    numberOfMonths={1}
+                    isOutsideRange={() => false}
+                    displayFormat="Do MMMM, YYYY"
+                />
                 <div className="add">
                     <Link to="/create">
                         <button type="button" className="btn btn-success add-expense">Add</button>

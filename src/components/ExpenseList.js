@@ -41,7 +41,7 @@ const ExpenseList = (props) => {
                         <th className="table-header sn">SN</th>
                         <th className="table-header">Expense</th>
                         <th
-                            className="table-header"
+                            className="table-header amt"
                             onClick={sortAmount}>Amount &nbsp;
                             {props.sortedAmountAscending === '' ?
                                 <img

@@ -8,7 +8,7 @@ import numeral from 'numeral';
 const ExpenseListItem = (props) => {
     return (
         <tr>
-            <th>{props.sn}</th>
+            <th className="sn">{props.sn}</th>
             <td>{props.description}</td>
             <td>Rs. {numeral(props.amount).format('0,0.00')}</td>
             <td className="visibilityDate">{moment(props.createdAt).format('Do MMMM, YYYY')}</td>
