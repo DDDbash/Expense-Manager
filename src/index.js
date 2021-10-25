@@ -1,19 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-// import App from "./App";
-import AppRouter from './routers/AppRouter';
-import configureStore from './store/configureStore';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/styles.css';
-// import './firebase/firebase';
-
-const store = configureStore();
+import App from "./App";
 
 ReactDOM.render(
-  <Provider store={store}>
-    <AppRouter />
-  </Provider>
+  <App />
   , document.getElementById("root")
 );

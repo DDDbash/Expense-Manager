@@ -26,7 +26,6 @@ const ExpenseDashboardPage = () => {
                 setSortedAmountDescending={sortAmountD}
                 setSortedAmountReset={sortAmountR} />
             <ExpenseTotal />
-
         </div>
     )
 };
