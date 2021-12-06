@@ -1,11 +1,3 @@
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Front-end for an expense manager app made with the use of ReactJs.
+You can perform CRUD operations, search through expenses with the expense name, filter out the expenses with their categories and the expense date, & sort out the expenses by
+date or amount.
